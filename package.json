@@ -1,0 +1,36 @@
+{
+  "name": "is_alphanumeric",
+  "version": "0.0.1",
+  "description": "is alpha or numeric for the browser and node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/is_alphanumeric.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "bench": "node bench",
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test"
+  },
+  "keywords": [
+    "is_alphanumeric",
+    "is_alphanumeric.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-jsbeautifier": "^0.2.10",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0",
+    "zuul": "^3.6.0"
+  },
+  "dependencies": {
+    "is_alphabetic": "git://github.com/nathanfaucett/is_alphabetic.git",
+    "is_numeric": "git://github.com/nathanfaucett/is_numeric.git"
+  }
+}
