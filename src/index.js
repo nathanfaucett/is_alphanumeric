@@ -1,5 +1,5 @@
-var isAlphabetic = require("is_alphabetic"),
-    isNumeric = require("is_numeric");
+var isAlphabetic = require("@nathanfaucett/is_alphabetic"),
+    isNumeric = require("@nathanfaucett/is_numeric");
 
 
 var isAlphabeticCode = isAlphabetic.code,
